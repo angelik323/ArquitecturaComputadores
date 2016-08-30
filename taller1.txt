@@ -1,0 +1,135 @@
+TALLER
+Este taller consiste en mejorar las habilidades de los conceptos aprendidos en clase.
+
+
+
+1. Implemente en VHDL un FlipFlop de 1bit, con entradas D, Reset, CLK, y una salida Dout.
+         __________ 
+D-------|          |    
+        |          |    
+RST-----|          |_______Dout    
+        |          |
+CLK-----|>         |
+        |__________|
+
+
+
+
+
+
+2. Escriba los 4 principios de diseño de hardware aprendidos en clase.
+
+
+- Principio de diseño de hardware: la simplicidad favorece la regularidad
+- Principio de diseño "Entre más pequeño más rápido"
+- Principio de diseño hacer el caso común más rápido
+- Principio de diseño buenos diseños demandan grandes compromisos
+
+
+
+3. Convertir a instrucciones de bajo nivel.
+
+int x=0; 
+int y=8; 
+int z=1; 
+
+y=x+3;
+z=z+3;
+x=(x-z)+(3+y);
+
+
+int x=0; ADD %g0, 0, %L0
+int y=8; ADD %g0, 8, %L1
+int z=1; ADD %g0, 1, %L2
+
+ADD %L0, 3, %L1
+ADD %L2, 3, %L2
+SUB %L0, %L2, %L3
+ADD %L1, 3, %L4
+ADD %L3, %L4, %O0
+
+
+
+
+
+
+4. Usar el LD, y ST.
+
+a[4]= a[2]+x;
+
+LD [%L1, (2*4)], %L0
+ADD %L0, %L2, %L2
+ST %L4, [%L4, (4*4)]
+
+
+
+y[0] = y[40]+13;
+
+
+LD [%L1, (40*4)], %L0
+ADD %L0, 13, %L2
+ST %L4, [%L4, (0*4)]
+
+
+
+
+
+
+5. Convertir a lenguaje de máquina.
+a.
+int main(){
+    
+    int i =3; p=2;
+    return i+3;
+}
+Lenguaje de bajo nivel: 
+0XOOOO add %g0, 3, &L0  |1 
+0XOOO4 add %g0 , 2, &L1 |2 
+0XOOO8 add %L0 , 3, &L2 |3
+Lenguaje de maquina: 
+  op     rd       op3     rs1     i     zero      rs2
+| 10 | |10000| |000000| |00000| | 1| |00000000| |00011|
+| 10 | |10001| |000000| |00000| | 1| |00000000| |00010|
+| 10 | |10010| |000000| |10000| | 1| |00000000| |00011|
+b.
+int main(){
+    int p=3; x=1; z=4;
+    int w=0; 
+    w=(p+40)+(x-z);
+    return 0; 
+}
+Lenguaje de bajo nivel: 
+0XOOOO add %g0, 3, &L1   |1 
+0XOOO4 add %g0, 1, &L2   |2 
+0XOOO8 add %g0, 4, &L3   |3 
+0XOOOC add %g0, 0, &L4   |4 
+0XOO1O add %L1, 40, &L5  |5 
+0XOO14 add %L2, %L3, &L6 |6 
+0XOO18 add %L5, &L6, &g1 |7 
+0XOO1C add %g0, 0, %O0   |8
+Lenguaje de maquina: 
+  op     rd       op3     rs1     i     zero      rs2
+| 10 | |10001| |000000| |00000| | 1| |00000000| |00011|
+| 10 | |10010| |000000| |00000| | 1| |00000000| |00001|
+| 10 | |10011| |000000| |00000| | 1| |00000000| |01000|
+| 10 | |10100| |000000| |00000| | 1| |00000000| |00000|
+| 10 | |10101| |000000| |10001| | 1| |00000001| |01000|
+| 10 | |10110| |000000| |10010| | 0| |00000000| |10011|
+| 10 | |00001| |000000| |10101| | 0| |00000000| |10110|
+| 10 | |01000| |000000| |00000| | 1| |00000000| |00000|
+
+
+6. Inicializar las siguientes variables negativas usando OR.
+n=-12,
+a=-11,
+b=-14
+
+
+0XOOOO or %g0 , -12 , &L0
+0XOOO4 or %g0 , -11 , &L1
+0XOOO8 or %g0 , -14 , &L2
+
+
+
+                                                                                                                                      Angélica María Loaiza Loaiza
+
