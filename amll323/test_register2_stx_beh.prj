@@ -1,0 +1,2 @@
+vhdl isim_temp "flipFlop.vhd"
+vhdl isim_temp "test_register2.vhd"
