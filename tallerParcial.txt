@@ -1,0 +1,356 @@
+TALLER PARCIAL ---- (Angelica Maria Loaiza Loaiza --- cod.1088310806)
+
+
+1) 
+-SISD (SINGLE INSTRUCTION SINGLE DATA):
+Una instruccion, un dato: computador secuencial que no explota
+el paralelismo en las instrucciones ni en flujos de datos. ej: PC.
+
+-MISD(MULTIPLE INSTRUCTION SINGLE DATA): 
+Multiples instrucciones, un dato: Poco comun debido al hecho de que la 
+efectividad de los multiples flujos de instrucciones suele precisar
+de multiples flujos de datos. ej: navegacion aerea.
+
+-SIMD(SINGLE INSTRUCTION MULTIPLE DATA):
+Una instruccion, multiples datos: un computador que explota varios flujos 
+de datos dentro de unico flujo de istrucciones para realizar.
+ej: procesador vectorial
+
+
+-MIMD(MULTIPLE INSTRUCTION MULTIPLE DATA): 
+Multiples instrucciones, multiples datos: Varios procesadores autonomos
+que ejecutan simultaneamente instrucciones diferentes sobre datos dierentes.
+ej: sistemas distribuidos.
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+2) Diga cuales son los 4 principios de diseño.
+
+* La simplicidad favorece la regularidad
+* Entre más pequeño más rápido
+* Hacer el caso común más rápido
+* Buenos diseños demandan grandes compromisos
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+3) Explique los tres formatos de instrucciones principales existentes 
+en la arquitectura SPARCV8.
+
+-FORMATO #1 Lo utilizan las instrucciones de CALL
+ OP    disp30
+
+FORMATO #2 Lo utilizan las instrucciones SETHI y BRANCH (Bicc,FBfcc,CBcc)
+
+|OP | a  | COND | OP2   | disp22
+|OP | RD | OP2  | imm22 |
+
+FORMATO #3 Lo utilizan las instrucciones memory instructions,arithmetic.logical,shnct and remaining
+
+|OP | RD | OP3 | RS1 | i |  UNSUED/ZERO | RS2
+|OP | RD | OP3 | RS1 | i |  UNSUED/ZERO | SHNCT
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+4) Explique cómo inicializar un valor grande, que ocupe más de 13 bits, en la arquitectura SPARCV8.}
+
+Se utilizan dos instrucciones, primero tomo los 22 bits mas 
+significativos del numero en binario y con una instruccion SETHI 
+los pongo en un registro, luego utilizando la instruccion or con 
+el registro don de se encuentran los 22 bits mas significativos y 
+los 10 restantes y se inicializa completo.
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+5) Como puedo reescribir la instrucción (OR y SUBcc) cuando inicializo 
+y  comparo 2 registros.
+
+Con la instruccion MOV para OR y CMP para SUBCC.
+
+
+
+
+---------------------------------------------------------------------------------------------------
+a)
+
+int main(){
+int a = 8;
+int b = ­16800;
+int c = 33;
+if((a+b)<=b*32){
+c=a+(b*2);
+}
+else{
+return b;
+}
+return a+c;
+}
+
+*Lenguaje ensamblador
+R)
+asigno registro 
+%L0=a
+%L1=b
+%L2=c 
+Ox0000 MOV 8, %L0                           
+Ox0004 SETHI -17,%L1
+Ox0008 OR 608,%L1
+Ox000C MOV 33,%L2
+Ox0010 ADD %L0,%L1,%L3
+Ox0014 SLL %L0, 32, %L4
+Ox0018 CMP %L3,%L4,L3
+Ox001C BG a, else
+Ox0020 SLL %L1, 2,%L5
+Ox0024 ADD %L0,%L5,%L2
+Ox0028 BA a EXIT
+else   
+Ox002C MOV, %L1,O0
+Ox0030 ADD %L0,%L2,O1
+EXIT nop
+
+*Lenguaje maquina 
+
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0000       10   10000  000010  00000  1    0000000010000
+dir_memoria  op   RD     op2     imm22
+Ox0004       00   10001  100     1111111111111111101111
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0008       10   10001  00010   10001  1  0001001100000
+Ox000C       10   10010  000100  00000  1  0000000100001
+Ox0010       10   10011  000000  10000  0  00000000      10001
+Ox0014       10   10100  100101  10100  1  0000000100000
+Ox0018       10   10011  010100  10011  0  00000000      10100
+dir_memoria op	    a	  cond	  op2	      disp22		
+Ox001C       00     1     1010    010    
+dir_memoria  op    RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0020       10    10101  100101  10001  1  0000000000010
+Ox0024       10    10010  000000  10000  0  00000000      10101
+dir_memoria op	    a	  cond	  op2	      disp22
+Ox0028       00     1     1000    010
+direcciones  op    RD     op3     Rs1    i  unusued/zero  Rs2
+Ox002C       10    01100  000010  00000  0  00000000      10001
+Ox0030       10    01001  000000  10000  0  00000000      10011
+Ox0034       00	 00000	 100	0000000000000000000000	
+
+
+
+------------------------------------------------------------------------------
+
+
+b)
+int main(){
+int a = 8;
+int b = ­10;
+if(a!=b){
+return c/8;
+}
+else{
+return b;
+}
+}
+
+R) 
+declarion de registros
+%L1=a
+%L2=b
+%L3=C
+
+Ox0000 MOV 8,%L1
+Ox0004 MOV -10,%L2
+Ox0008 MOV   5 ,%L4
+Ox000C CMP %L1, %L2,%L0 
+Ox0010 BE a , else
+Ox0014 SRL %L3, 8,%L4
+Ox0018 MOV %L4,%O1
+Ox001C BA a EXIT
+else  
+Ox0020 MOV %L2, %O2
+EXIT nop
+
+Lenguaje maquina 
+
+dir_memoria op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0000	     10  10001	000010	00000   1    0000000001000
+Ox0004	     10	 10010	000010	00000	1    1111111111010
+Ox0008	     10	 10011	000010	00000	1    0000000000101
+Ox000C	     10	 10000  010100	10001	0   00000000	10000
+dir_memoria op	    a	  cond	  op2	      disp22
+Ox0010	     00     1	  0001    010	0000000000000000000011	
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0014       10	 10100	100110	10011	1   0000000001000
+Ox0018	     10	 01001	000010	00000	1   00000000	10010
+dir_memoria  op	    a	  cond	  op2	      disp22
+Ox001C       00	    1	  1000	  010	0000000000000000000010
+dir_memoria op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0020	     10	 01010	000010	00000	0   00000000	10001
+dir_memoria  op   RD     op2     imm22
+Ox0024       00	 00000	 100	0000000000000000000000	
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+C)
+int main(){
+int a = ­21180;
+return a;
+}
+
+declaracion de resgistros
+%L0= a
+Ox0000 SETHI -21,%L0
+Ox0004 OR %L0, 324,%L0
+Ox0008 MOV %LO,O0
+
+Lenguaje maquina 
+
+direcciones  op   RD     op2     imm22
+Ox0000	     00	 10000	 100	1111111111111111110101
+direcciones  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0004	     10	 10000	 000010	10000	1	0000101000100
+Ox0008	     10	 10000	 000010	00000	0    00000000	01000
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+d)
+
+int main(){
+int a = 6; int b=4;
+for(int i=0; i<=3; i++){
+c=(a+b)/8;
+}
+return c;
+}
+
+declaracion de registros
+%L0=a 
+%L1=b
+%L2=i
+
+0x0000 MOV 6,%L0
+Ox0004 MOV 4,%L1
+Ox0008 MOV 0,%L2
+for
+Ox000C CMP %L2,3,%L6
+Ox0010 BG a, else
+Ox0014 ADD %L0,%L1,%L4
+Ox0018 SRL %L4,8,%L5
+Ox001C BA, for
+Ox0020 ADD %L0,1,%L0
+else
+Ox0024 MOV %L4,%O0
+
+Lenguaje maquina 
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0000	     10	 10000	0000100	00000	1   0000000000110
+Ox0004	     10	 10001	0000100	00000	1   0000000000100
+Ox0008	     10	 10010	0000100	00000	1   0000000000000	
+Ox000C	     10	 10110	010100	10010	1   0000000000011
+dir_memoria op	    a	  cond	  op2	      disp22
+Ox0010	     00	    1	  1010	  010	0000000000000000000100
+dir_memoria op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0014	     10	 10100	000000	10000	0  00000000	10100
+Ox0018	     10	 10101	100110	10100	1  00000000	01000
+dir_memoria  op	    a	  cond	  op2	      disp22
+Ox001C	     00	    1	  1000	  010	1111111111111111111100
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0020       10  10000   000000  10000  1   0000000000001
+Ox0024	     10	 01000	 000010	 00000	0   00000000	10100
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+8) Convierta el siguiente código a lenguaje de máquina SPARCV8.
+
+int ejemplo(int x, int y, int z){     EJEMPLO
+int a;                                SUB %i0,%i1,%i3
+a = x ­ y + z*8;                      SLL %i2,8,%i2
+return a + 2;                         ADD %i3,%i2,%l1
+                                      JMPL %O7,8,%g0
+                                      ADD %L1,2,%O0
+ 
+
+} 
+
+int main(){                            MAIN
+int x = 4, y = 2, z = ­128;            MOV 4,%L0
+int c= 0;                              MOV 2,%L1
+int c = ejemplo(x,y,z);                MOV -128,%L2
+return c + 45;                         CALL EJEMPLO
+                                       MOV 0,%L0
+                                       ADD %L0,45,%O1                          
+}
+
+
+Lenguaje maquina 
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0000	     10	 10001	000010	00000	1    0000000000000
+Ox0004	     10	 10010	000010	00000	1    0000000000000
+Ox0008	     10	 10011	010100	10010	1  00000000	11001
+Ox000C	     10	 00000	111000	01111	1    0000000001000
+dir_memoria  op	    a	  cond	  op2	      disp22
+Ox0010	     00	    1	  1010	  010	0000000000000000000011
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0014	     10	100101	000000	10001	0   00000000	11001
+dir_memoria op	    a	  cond	  op2	      disp22
+Ox0018	     00	    1	  1000	  010   0000000000000000000010
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox001C	     10	 10010	000000	10010	1    0000000000001
+Ox0020	     10	 00000	111000	01111	1    0000000001000
+Ox0024	     10	 00111	000010	00000	0   00000000	10001
+Ox0028	     10	 11000	000010	00000	1    0000000000010
+Ox002C	     10	 11001	000010	00000	1    0000000000101
+dir_memoria op  disp30
+Ox0030	     01	000000000000000000000000000010110
+dir_memoria  op   RD     op3     Rs1    i  unusued/zero  Rs2
+Ox0034	     10	 10000	000010	00000	1    0000000000000
+Ox0038	     10	 01001	000010	00000	1   00000000	10000	
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+12) Implemente una función fact en lenguaje de alto nivel, lenguaje de 
+bajo nivel SPARCV8 y lenguaje de máquina SPARCV8 que calcule el 
+factorial de un número entero sin signo
+
+//lenguaje de alto nivel
+
+int fact (int n){
+	int x=1;
+	int i=1;
+	while(i<n+1){
+		x=multi(x,i);
+		i++;
+	}
+	 return x;
+      }
