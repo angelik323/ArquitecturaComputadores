@@ -1,0 +1,1 @@
+vhdtdtfi -prj procesadormonocicloLDS -o "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhi" -module seu -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work seu.vhd 

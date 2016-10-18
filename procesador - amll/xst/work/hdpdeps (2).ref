@@ -1,0 +1,62 @@
+V3 30
+FL "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/nPC.vhd" 2016/09/26.19:44:10 P.20131013
+EN work/nPC 1476232499 \
+      FL "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/nPC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/nPC/Behavioral 1476232500 \
+      FL "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/nPC.vhd" \
+      EN work/nPC 1476232499
+FL "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/sumador.vhd" 2016/10/11.21:28:58 P.20131013
+FL "C:/Users/usuario pc/Desktop/procesador - copia/alu.vhd" 2016/10/16.15:13:55 P.20131013
+EN work/alu 1476820714 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/alu.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/alu/Behavioral 1476820715 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/alu.vhd" EN work/alu 1476820714
+FL "C:/Users/usuario pc/Desktop/procesador - copia/mux.vhd" 2016/10/18.12:50:19 P.20131013
+EN work/mux 1476813025 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/mux.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux/Behavioral 1476813026 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/mux.vhd" EN work/mux 1476813025
+FL "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhd" 2016/10/18.13:52:22 P.20131013
+EN work/registerFile 1476816746 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/registerFile/Behavioral 1476816747 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhd" \
+      EN work/registerFile 1476816746
+FL "C:/Users/usuario pc/Desktop/procesador - copia/RegisterFille.vhd" 2016/10/18.12:19:04 P.20131013
+EN work/RegisterFille 0 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/RegisterFille.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/RegisterFille/ArquitecturaRegisterFille 0 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/RegisterFille.vhd" \
+      EN work/RegisterFille 0
+FL "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhd" 2016/10/18.12:54:17 P.20131013
+EN work/seu 1476813264 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/seu/Behavioral 1476813265 \
+      FL "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhd" EN work/seu 1476813264
+FL "C:/Users/usuario pc/Desktop/procesador/registerFile.vhd" 2016/10/16.14:41:18 P.20131013
+FL "C:/Users/usuario pc/Desktop/procesador/sumador.vhd" 2016/10/16.10:03:32 P.20131013
+EN work/sumador 1476630217 \
+      FL "C:/Users/usuario pc/Desktop/procesador/sumador.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sumador/Behavioral 1476630218 \
+      FL "C:/Users/usuario pc/Desktop/procesador/sumador.vhd" EN work/sumador 1476630217
+FL "C:/Users/usuario pc/Desktop/procesador/unidadControl.vhd" 2016/10/16.15:01:21 P.20131013
+EN work/unidadControl 1476648089 \
+      FL "C:/Users/usuario pc/Desktop/procesador/unidadControl.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/unidadControl/Behavioral 1476648090 \
+      FL "C:/Users/usuario pc/Desktop/procesador/unidadControl.vhd" \
+      EN work/unidadControl 1476648089
+FL C:/Users/utp/Desktop/PROCESOS/procesadormonocicloLDS/nPC.vhd 2016/09/26.19:44:09 P.20131013
+FL H:/procesador/memoriaInstrucciones.vhd 2016/10/12.20:30:30 P.20131013
+EN work/memoriaInstrucciones 1476322322 FL H:/procesador/memoriaInstrucciones.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB std/TEXTIO 1381692176
+AR work/memoriaInstrucciones/Behavioral 1476322323 \
+      FL H:/procesador/memoriaInstrucciones.vhd EN work/memoriaInstrucciones 1476322322

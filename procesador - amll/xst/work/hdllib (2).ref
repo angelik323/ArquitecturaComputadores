@@ -1,0 +1,17 @@
+AR mux behavioral "C:/Users/usuario pc/Desktop/procesador - copia/mux.vhd" sub00/vhpl12 1476813026
+EN seu NULL "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhd" sub00/vhpl13 1476813264
+EN memoriainstrucciones NULL H:/procesador/memoriaInstrucciones.vhd sub00/vhpl04 1476322322
+EN unidadcontrol NULL "C:/Users/usuario pc/Desktop/procesador/unidadControl.vhd" sub00/vhpl08 1476648089
+AR npc behavioral "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/nPC.vhd" sub00/vhpl01 1476232500
+AR seu behavioral "C:/Users/usuario pc/Desktop/procesador - copia/seu.vhd" sub00/vhpl14 1476813265
+AR sumador behavioral "C:/Users/usuario pc/Desktop/procesador/sumador.vhd" sub00/vhpl03 1476630218
+AR memoriainstrucciones behavioral H:/procesador/memoriaInstrucciones.vhd sub00/vhpl05 1476322323
+EN registerfille NULL "C:/Users/usuario pc/Desktop/procesador - copia/RegisterFille.vhd" sub00/vhpl10 1476811232
+AR unidadcontrol behavioral "C:/Users/usuario pc/Desktop/procesador/unidadControl.vhd" sub00/vhpl09 1476648090
+EN npc NULL "C:/Users/usuario pc/Desktop/LORE/Nueva carpeta/procesadormonocicloLDS/nPC.vhd" sub00/vhpl00 1476232499
+EN mux NULL "C:/Users/usuario pc/Desktop/procesador - copia/mux.vhd" sub00/vhpl11 1476813025
+AR registerfile behavioral "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhd" sub00/vhpl07 1476816747
+AR alu behavioral "C:/Users/usuario pc/Desktop/procesador - copia/alu.vhd" sub00/vhpl16 1476820715
+EN sumador NULL "C:/Users/usuario pc/Desktop/procesador/sumador.vhd" sub00/vhpl02 1476630217
+EN registerfile NULL "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhd" sub00/vhpl06 1476816746
+EN alu NULL "C:/Users/usuario pc/Desktop/procesador - copia/alu.vhd" sub00/vhpl15 1476820714

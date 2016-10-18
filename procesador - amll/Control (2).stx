@@ -1,0 +1,67 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" in Library work.
+Entity <unidad_de_control> compiled.
+ERROR:HDLParsers:3010 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 49. Entity Control does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Undefined symbol 'Opcode'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Opcode: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Undefined symbol 'Function1'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Function1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Undefined symbol 'Zero'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. Zero: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 52. parse error, unexpected SEMICOLON
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 60. Undefined symbol 'RegDst'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 61. Undefined symbol 'NextPc'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 62. Undefined symbol 'DataRegWr'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 63. Undefined symbol 'AluOp'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 64. Undefined symbol 'MemWrite'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 65. Undefined symbol 'Alusrc'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 66. Undefined symbol 'RegWrite'.
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 68. parse error, unexpected WHEN
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 70. RegDst: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 71. NextPc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 72. DataRegWr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 73. AluOp: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 74. MemWrite: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 75. Alusrc: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 76. RegWrite: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 78. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 88. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 98. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 108. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 118. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 128. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 138. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 148. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 158. parse error, unexpected WHEN
+ERROR:HDLParsers:164 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/unidad_de_control.vhd" Line 172. parse error, unexpected CASE, expecting SEMICOLON
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+
+Total memory usage is 259432 kilobytes
+
+Number of errors   :   33 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

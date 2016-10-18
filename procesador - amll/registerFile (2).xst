@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/usuario pc/Desktop/procesador - copia/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/usuario pc/Desktop/procesador - copia/xst"
+elaborate
+-ifn registerFile.prj
+-ifmt mixed
