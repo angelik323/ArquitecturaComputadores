@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/usuario pc/Desktop/procesador/registerFile.xst" -ofn "C:/Users/usuario pc/Desktop/procesador/registerFile.syr" 
+xst -intstyle ise -ifn "C:/Users/usuario pc/Desktop/procesador/registerFile.xst" -ofn "C:/Users/usuario pc/Desktop/procesador/registerFile.syr" 
+vhdtdtfi -prj procesadormonocicloLDS -o "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhi" -module registerFile -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work registerFile.vhd 
+vhdtdtfi -prj procesadormonocicloLDS -o "C:/Users/usuario pc/Desktop/procesador - copia/registerFile.vhi" -module registerFile -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work registerFile.vhd 

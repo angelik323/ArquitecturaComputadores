@@ -1,0 +1,47 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" in Library work.
+Entity <im> compiled.
+ERROR:HDLParsers:3010 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 40. Entity Instruccion_Memory does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 42. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 42. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 43. Undefined symbol 'Memory_instruccion'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 43. Memory_instruccion: Undefined symbol (last report in this block)
+ERROR:HDLParsers:842 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 43. The type of the element in aggregate does not correspond to any array type.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Undefined symbol 'instruccion_memory'.
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Undefined symbol 'Memory_ROM'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Memory_ROM: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Undefined symbol 'Conv_integer'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Conv_integer: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. Undefined symbol 'direccion'.
+ERROR:HDLParsers:1209 - "C:/Users/Juan Camilo Olmos 95/Desktop/procesadormonocicloLDS/IM.vhd" Line 48. direccion: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+
+Total memory usage is 259468 kilobytes
+
+Number of errors   :   13 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
