@@ -1,0 +1,7 @@
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\UC.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\sumador.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\registerFile.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\nPC.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\IM.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\ALU.vhd"
+vhdl work "C:\Users\Estudiantes\Desktop\procesadorMono\Procesador.vhd"

@@ -1,0 +1,8 @@
+vhdl work "UC.vhd"
+vhdl work "sumador.vhd"
+vhdl work "registerFile.vhd"
+vhdl work "nPC.vhd"
+vhdl work "IM.vhd"
+vhdl work "ALU.vhd"
+vhdl work "Procesador.vhd"
+vhdl work "tb_Procesador.vhd"

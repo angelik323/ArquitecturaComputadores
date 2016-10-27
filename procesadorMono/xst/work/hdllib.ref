@@ -1,0 +1,14 @@
+AR procesador behavioral C:/Users/Estudiantes/Desktop/procesadorMono/Procesador.vhd sub00/vhpl13 1477100878
+AR im behavioral C:/Users/Estudiantes/Desktop/procesadorMono/IM.vhd sub00/vhpl09 1477100872
+AR npc behavioral C:/Users/Estudiantes/Desktop/procesadorMono/nPC.vhd sub00/vhpl05 1477100868
+EN im NULL C:/Users/Estudiantes/Desktop/procesadorMono/IM.vhd sub00/vhpl08 1477100871
+AR sumador behavioral C:/Users/Estudiantes/Desktop/procesadorMono/sumador.vhd sub00/vhpl11 1477100876
+EN procesador NULL C:/Users/Estudiantes/Desktop/procesadorMono/Procesador.vhd sub00/vhpl12 1477100877
+AR uc behavioral C:/Users/Estudiantes/Desktop/procesadorMono/UC.vhd sub00/vhpl07 1477100870
+EN uc NULL C:/Users/Estudiantes/Desktop/procesadorMono/UC.vhd sub00/vhpl06 1477100869
+EN npc NULL C:/Users/Estudiantes/Desktop/procesadorMono/nPC.vhd sub00/vhpl04 1477100867
+AR alu behavioral C:/Users/Estudiantes/Desktop/procesadorMono/ALU.vhd sub00/vhpl01 1477100874
+AR registerfile behavioral C:/Users/Estudiantes/Desktop/procesadorMono/registerFile.vhd sub00/vhpl03 1477100866
+EN sumador NULL C:/Users/Estudiantes/Desktop/procesadorMono/sumador.vhd sub00/vhpl10 1477100875
+EN alu NULL C:/Users/Estudiantes/Desktop/procesadorMono/ALU.vhd sub00/vhpl00 1477100873
+EN registerfile NULL C:/Users/Estudiantes/Desktop/procesadorMono/registerFile.vhd sub00/vhpl02 1477100865
