@@ -1,0 +1,7 @@
+[Inputs]
+B
+=A[31:0]=
+=selector[31:0]=
+[Outputs]
+=mux_out[31:0]=
+[BiDir]

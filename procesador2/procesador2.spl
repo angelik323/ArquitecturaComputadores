@@ -1,0 +1,6 @@
+[Inputs]
+clk
+reset
+[Outputs]
+=resultado[31:0]=
+[BiDir]

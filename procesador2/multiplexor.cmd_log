@@ -1,0 +1,3 @@
+vhdtdtfi -prj procesador2 -o C:/Xilinx/procesador2/multiplexor.vhi -module multiplexor -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work multiplexor.vhd 
+vhdtdtfi -lib work multiplexor.vhd -prj procesador2 -o multiplexor.spl -module multiplexor -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aartix7 multiplexor.spl C:/Xilinx/procesador2/multiplexor.sym 

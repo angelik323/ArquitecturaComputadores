@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Xilinx/procesador2/sumador.xst" -ofn "C:/Xilinx/procesador2/sumador.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/procesador2/sumador.xst" -ofn "C:/Xilinx/procesador2/sumador.syr" 
