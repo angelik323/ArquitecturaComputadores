@@ -1,0 +1,2 @@
+vhdtdtfi -prj Procesador_3 -o C:/Users/utp/Desktop/Procesador4/WM.vhi -module WM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work WM.vhd 
+vhdtdtfi -prj Procesador_3 -o C:/Users/utp/Desktop/Procesador4/WM.vhi -module WM -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work WM.vhd 

@@ -1,0 +1,57 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/utp/Desktop/Procesador4/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/utp/Desktop/Procesador4/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/ProgramCounter.vhd" in Library work.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/Adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/InstructionMemory.vhd" in Library work.
+Architecture behavioral of Entity instructionmemory is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/WM.vhd" in Library work.
+Architecture behavioral of Entity wm is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/SignExtensionUnit.vhd" in Library work.
+Architecture behavioral of Entity signextensionunit is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/PSR.vhd" in Library work.
+Architecture behavioral of Entity psr is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/ControlUnity.vhd" in Library work.
+Architecture behavioral of Entity controlunity is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/Mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/PSRModifier.vhd" in Library work.
+Architecture arqpsrmodifier of Entity psrmodifier is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/Alu.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/utp/Desktop/Procesador4/Procesador_3.vhd" in Library work.
+Entity <procesador_3> compiled.
+Entity <Procesador_3> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+
+Total memory usage is 215872 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
